@@ -10,4 +10,7 @@
 
 <div class="card" *ngIf="!hidden">
   <article class="card-text">Card mostrado, {{ name }} logado!</article>
+  <article class="card-text">O número da sorte é: {{ myNumber }}</article>
 </div>
+
+<app-child (changeNumber)="onChangeNumber()"></app-child>
