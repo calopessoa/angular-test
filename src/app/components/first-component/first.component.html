@@ -1,3 +1,13 @@
-<main class="card" *ngIf="!isHidden">
-  <div *ngIf="name === 'Carlos Augusto'">Card mostrado, {{ name }} logado!</div>
-</main>
+<button 
+  (click)="authenticateMock()"
+  *ngIf="hidden === true; else HideCard"
+  >
+  Show Card
+</button>
+<ng-template #HideCard>
+  <button (click)="authenticateMock()">Hide Card</button>
+</ng-template>
+
+<div class="card" *ngIf="!hidden">
+  <article class="card-text">Card mostrado, {{ name }} logado!</article>
+</div>
