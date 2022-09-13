@@ -1,1 +1,3 @@
-<p>{{name}}</p>
+<main class="card" *ngIf="!isHidden">
+  <div *ngIf="name === 'Carlos Augusto'">Card mostrado, {{ name }} logado!</div>
+</main>
