@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Skill } from 'src/app/Skill';
 
 @Component({
   selector: 'app-details',
@@ -6,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-  skills = [
-    { skill: 'front-end', type: 'hard-skills'},
-    { skill: 'back-end', type: 'hard-skills'},
-    { skill: 'good communication', type: 'soft-skills'},
-    { skill: 'self-management', type: 'soft-skills'},
+  skills: Skill[] = [
+    { skill: 'front-end', type: 'hard-skills', experience: 1 },
+    { skill: 'back-end', type: 'hard-skills', experience: 1},
+    { skill: 'good communication', type: 'soft-skills', experience: 9 },
+    { skill: 'self-management', type: 'soft-skills', experience: 2 },
   ]
   constructor() { }
 

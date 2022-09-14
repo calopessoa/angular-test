@@ -1,6 +1,8 @@
 <main>
   <h3>detalhes</h3>
   <ul>
-    <li *ngFor="let skill of skills">Skills: {{skill.skill}} - type: {{skill.type}}</li>
+    <li *ngFor="let skill of skills">Skills: {{skill.skill}} - type: {{skill.type}}
+      <p>- anos de experiência: {{skill.experience}}</p>
+    </li>
   </ul>
 </main>
