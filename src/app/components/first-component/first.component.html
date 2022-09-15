@@ -1,18 +1,20 @@
-<button
-  (click)="authenticateMock()"
-  *ngIf="hidden === true; else HideCard"
-  >
-  Show Card
-</button>
-<ng-template #HideCard>
-  <button (click)="authenticateMock()">Hide Card</button>
-</ng-template>
+<aside class="aside-left">
+  <button
+    (click)="authenticateMock()"
+    *ngIf="hidden === true; else HideCard"
+    >
+    Show Card
+  </button>
+  <ng-template #HideCard>
+    <button (click)="authenticateMock()">Hide Card</button>
+  </ng-template>
 
-<div class="card" *ngIf="!hidden">
-  <article class="card-text">Card mostrado, {{ name }} logado!</article>
-  <article class="card-text">O número da sorte é: {{ myNumber }}</article>
+  <div class="card" *ngIf="!hidden">
+    <article class="card-text">Card mostrado, {{ name }} logado!</article>
+    <article class="card-text">O número da sorte é: {{ myNumber }}</article>
 
-  <app-details></app-details>
-</div>
+    <app-details></app-details>
+  </div>
 
-<app-child (changeNumber)="onChangeNumber()"></app-child>
+  <app-child (changeNumber)="onChangeNumber()"></app-child>
+</aside>
