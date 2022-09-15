@@ -12,7 +12,7 @@ import { DetailsComponent } from './components/details/details.component';
     AppComponent,
     FirstComponent,
     ChildComponent,
-    DetailsComponent
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
