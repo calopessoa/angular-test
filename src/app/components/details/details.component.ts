@@ -13,6 +13,9 @@ export class DetailsComponent implements OnInit {
     { skill: 'good communication', type: 'soft-skills', experience: 9 },
     { skill: 'self-management', type: 'soft-skills', experience: 2 },
   ]
+
+  date: any = new Date();
+
   constructor() { }
 
   ngOnInit(): void {
